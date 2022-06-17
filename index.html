@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">     
+    </head>
+    <body>
+        
+        <div id="main">           
+        <h1>Get a <span>Random Password<span></h1>
+        <p class="text">Never use an insecure password again.</p>
+         
+        <div class='password'>
+        <label for="passlength">Password length:</label>
+        <input type="text" id="passlength" name="passlength"  e="range" min="10" max="20" step="1" on><br><br>
+        </div>
+        
+        
+        
+        <div  id="renderPassword">
+            <button id='btn' type="text" onclick="passwordGenerator2()">Generate Password</button><br><br>
+            <input type="text"  name="password1" id="firstPass" placeholder="one" onclick="printPasswordsOne()"> 
+            <input type="text"  name="password2" id="secondPass" placeholder="two" onclick= "printPasswordsTwo()"> 
+            <input type="text"  name="password3" id="thirdPass" placeholder="three" onclick="printPasswordsThree()"> 
+            <input type="text"  name="password4" id="fourthPass" placeholder="four" onclick="printPasswordsFour()"> 
+
+    
+       <button class="btn2" type="text" > Click on the boxes above to copy password to clipboard</button>
+        </div>
+        <script src="index.js">
+        </script>
+    </body>
+</html>
